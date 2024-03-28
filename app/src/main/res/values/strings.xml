@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Ricky Hub</string>
+    <string name="action_reload">Reload</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings_header">Ricky Hub Settings</string>
+    <string name="title_activity_settings">Settings Activity</string>
+    <string name="loading_characters_text">Loading characters…</string>
+    <string name="no_characters_found_text">No characters found</string>
+    <string name="grid_view_status">Visual layout configuration</string>
+    <string name="specie_text_header">Specie:</string>
+    <string name="gender_text_header">Gender:</string>
+    <string name="origin_text_header">Origin:</string>
+    <string name="location_text_header">Location:</string>
+    <string name="episodes_text_header">Episodes:</string>
+    <string name="searchbox_placeholder">Search…</string>
+    <string name="load_more_characters_text">Load more characters</string>
+    <string name="more_characters_loaded_text">More characters loaded successfully</string>
+    <string name="searchbox_cleared_text">The search box has been cleared successfully</string>
+</resources>

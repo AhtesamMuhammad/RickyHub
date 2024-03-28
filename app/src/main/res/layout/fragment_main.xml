@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:accessibilityPaneTitle="Ricky Hub"
+    tools:context=".MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/headerTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gridStatusSwitch"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-18dp" />
+
+        <ImageView
+            android:id="@+id/listViewIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/list_view"
+            app:layout_constraintBottom_toBottomOf="@+id/gridStatusSwitch"
+            app:layout_constraintEnd_toStartOf="@+id/gridStatusSwitch"
+            app:layout_constraintTop_toTopOf="@+id/gridStatusSwitch"
+            app:tint="@color/icon"
+            tools:ignore="MissingConstraints" />
+
+        <Switch
+            android:id="@+id/gridStatusSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerTitleText"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/gridViewIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/grid_view"
+            app:tint="@color/icon"
+            app:layout_constraintBottom_toBottomOf="@+id/gridStatusSwitch"
+            app:layout_constraintStart_toEndOf="@+id/gridStatusSwitch"
+            app:layout_constraintTop_toTopOf="@+id/gridStatusSwitch"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/searchbox_placeholder"
+            android:inputType="text"
+            android:paddingRight="45dp"
+            app:layout_constraintBottom_toTopOf="@+id/charactersRecyclerView"
+            app:layout_constraintEnd_toEndOf="@+id/clearSearchButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridStatusSwitch" />
+
+        <ImageButton
+            android:id="@+id/clearSearchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/transparent_background"
+            android:src="@drawable/close"
+            app:layout_constraintBottom_toBottomOf="@+id/searchBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/searchBox"
+            app:tint="@color/icon" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/charactersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:clipToPadding="true"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchBox" />
+
+        <Button
+            android:id="@+id/loadMoreCharacters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/recycler_view_item_background"
+            android:text="@string/load_more_characters_text"
+            android:textColor="@color/recycler_view_item_color"
+            android:visibility="gone"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charactersRecyclerView" />
+
+        <TextView
+            android:id="@+id/feedbackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/loading_characters_text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loadMoreCharacters" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
