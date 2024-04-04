@@ -1,6 +1,6 @@
 # RickyHub
 
-This project consists of a mobile application where I learned how to use and interpret the [Ricky And Morty API](rickandmortyapi.com) to retrieve information and display it in the form of listings. In addition, I implemented a search engine that allows filtering characters according to specific criteria. I also added a configuration page where several additional changes can be made.
+This project consists of a mobile application where I learned how to use and interpret the [Ricky And Morty API](https://rickandmortyapi.com) to retrieve information and display it in the form of listings. In addition, I implemented a search engine that allows filtering characters according to specific criteria. I also added a configuration page where several additional changes can be made.
 
 ## Featured Features
 
